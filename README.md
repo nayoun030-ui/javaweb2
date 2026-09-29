@@ -18,3 +18,14 @@
 - [templatemo-first-portfolio-style.css : 한글 메뉴 폰트 크기 수정](https://github.com/nayoun030-ui/javaweb2/blob/main/src/main/resources/static/css/templatemo-first-portfolio-style.css)
 - [public 폴더 : 기술 상세 페이지 4개](https://github.com/nayoun030-ui/javaweb2/tree/main/src/main/resources/public)
   - detailed_web.html, detailed_ai.html, detailed_app.html, detailed_design.html
+
+## 4주차 데이터베이스 연동 및 테스트 완료
+- MySQL 8 설치, `spring` 데이터베이스 생성, Spring Data JPA 연동
+- [pom.xml : JPA, MySQL 커넥터 주석 해제](https://github.com/nayoun030-ui/javaweb2/blob/main/pom.xml)
+- [application.properties : DB 접속 정보 추가](https://github.com/nayoun030-ui/javaweb2/blob/main/src/main/resources/application.properties) (비밀번호는 업로드 제외된 `secret.properties` 로 분리)
+- 계층별 패키지 구조로 변경 : controller / model(domain, repository, service)
+  - [DemoController.java : controller 패키지로 이동, /testdb 매핑 추가](https://github.com/nayoun030-ui/javaweb2/blob/main/src/main/java/com/example/demo/controller/DemoController.java)
+  - [TestDB.java : 엔티티 (연습문제 - 나이, 성별 컬럼 추가)](https://github.com/nayoun030-ui/javaweb2/blob/main/src/main/java/com/example/demo/model/domain/TestDB.java)
+  - [TestRepository.java : JpaRepository 상속](https://github.com/nayoun030-ui/javaweb2/blob/main/src/main/java/com/example/demo/model/repository/TestRepository.java)
+  - [TestService.java : findByName, findAll](https://github.com/nayoun030-ui/javaweb2/blob/main/src/main/java/com/example/demo/model/service/TestService.java)
+- [testdb.html : th:each 로 다수 사용자 출력](https://github.com/nayoun030-ui/javaweb2/blob/main/src/main/resources/templates/testdb.html)
