@@ -3,7 +3,7 @@
 ## 2주차 스프링 부트 개발환경, 테스트 완료
 - 개발 환경 : VS Code + Spring Boot 4.1.1 + Java 25 (Maven, Jar)
 - [index_backup.html : 2주차 메인화면 실행/수정 완료](https://github.com/nayoun030-ui/javaweb2/blob/main/src/main/resources/templates/index_backup.html)
-- [DemoController.java : /hello, /hello2 URL 매핑 추가](https://github.com/nayoun030-ui/javaweb2/blob/main/src/main/java/com/example/demo/DemoController.java)
+- [DemoController.java : /hello, /hello2 URL 매핑 추가](https://github.com/nayoun030-ui/javaweb2/blob/main/src/main/java/com/example/demo/controller/DemoController.java)
 - [hello.html : model 데이터 출력](https://github.com/nayoun030-ui/javaweb2/blob/main/src/main/resources/templates/hello.html)
 - [hello2.html : 연습문제 - 5개 속성 출력](https://github.com/nayoun030-ui/javaweb2/blob/main/src/main/resources/templates/hello2.html)
 - [pom.xml : DB 관련 의존성 주석 처리](https://github.com/nayoun030-ui/javaweb2/blob/main/pom.xml)
